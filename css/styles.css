@@ -3,3 +3,8 @@
   transform: translateY(-50%);
   bottom: initial;
 }
+
+.grid-aligning {
+  position: absolute;
+  top: 7%;
+}
