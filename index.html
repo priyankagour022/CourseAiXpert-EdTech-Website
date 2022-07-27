@@ -25,7 +25,7 @@
         <!-- ** Navbar -->
         <nav class="navbar navbar-expand-lg">
           <div class="container-fluid">
-            <a class="navbar-brand fw-semibold fs-2" href="#"
+            <a class="navbar-brand fw-semibold fs-2" href="#home"
               ><i class="fa-solid fa-graduation-cap"></i> EdTech</a
             >
             <button
@@ -42,27 +42,27 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0">
                 <li class="nav-item m-3">
-                  <a class="nav-link" aria-current="page" href="#">Home</a>
+                  <a class="nav-link" aria-current="page" href="#home" id="home">Home</a>
                 </li>
                 <li class="nav-item m-3">
-                  <a class="nav-link" href="#">Courses</a>
+                  <a class="nav-link" href="#courses">Courses</a>
                 </li>
                 <li class="nav-item m-3">
-                  <a class="nav-link" href="#">Deals</a>
+                  <a class="nav-link" href="#explore">Explore</a>
                 </li>
                 <li class="nav-item m-3">
-                  <a class="nav-link" href="#">Success</a>
+                  <a class="nav-link" href="#success">Success</a>
                 </li>
                 <li class="nav-item m-3">
-                  <a class="nav-link" href="#">About</a>
+                  <a class="nav-link" href="#faq">FAQ</a>
                 </li>
                 <li class="nav-item m-3">
-                  <a class="nav-link" href="#">Register</a>
+                  <a class="nav-link" href="#register">Register</a>
                 </li>
               </ul>
               <form class="d-flex" role="search">
                 <button type="button" class="btn btn-outline-primary btn-color">
-                  Register
+                  <a class="text-decoration-none" href="#register">Register</a>
                 </button>
               </form>
             </div>
@@ -159,8 +159,8 @@
     <main>
       <!-- Title header Section -->
       <section class="container my-5">
-        <div class="text-center">
-          <h1>Discover Our Popular Courses</h1>
+        <div class="text-center" id="courses">
+          <h1 class="fw-bolder">Discover Our Popular Courses</h1>
           <p>
             It is a long established fact that a reader will be distracted by
             the readable content of a page when looking at its layout.
@@ -185,8 +185,8 @@
                         <div class="card-body my-4">
                           <h5 class="card-title">Fundamental Of UI/UX Design</h5>
                           <p class="card-text">
-                            UX/UI is the user experience and user-interface.You'll learn
-                            most of things from this course.
+                            UX/UI is the user experience & user-interface.You'll learn
+                            most of things this course.
                           </p>
                           <p class="card-text">
                             <p class="fw-semibold fs-5 price-color">Price : 20$</p>
@@ -328,7 +328,7 @@
       </section>
       <!-- View all button -->
       <!-- *Extra: Explore Institute -->
-      <section class="container" style="position:relative">
+      <section class="container" id="explore">
         <div class="card mb-3">
           <div class="row g-0">
             <div class="col-lg-5 col-md-5 col-12">
@@ -336,7 +336,7 @@
             </div>
             <div class="col-lg-7 col-md-7 col-12 explore-background">
               <div class="card-body grid-aligning">
-                <h1 class="card-title">Explore Our Institute</h1>
+                <h1 class="card-title fw-bolder">Explore Our Institute</h1>
                 <p class="card-text">We offer variety of courses with good pricing and great support, Join us and fulfil your dream</p>
                 <p class="card-text">You can use our free trail and explore later. In few courses we offer <strong> Money Back </strong>guarantee.</p>
                 <div class="d-flex gap-3 my-1">
@@ -363,7 +363,7 @@
       </section>
       <!-- *Extra: Explore Institute -->
       <!-- Ready to join -->
-      <section class="container p-5 bg-color text-white rounded-2 my-5">
+      <section class="container p-5 bg-color text-white rounded-2 my-5" id="register">
         <div class="row">
             <div class="col-lg-8 col-md-12 col-12 text-lg-start text-md-center text-center ps-5 my-auto">
                 <h1>
@@ -418,8 +418,8 @@
         </div>
       </section>
       <!-- Ready to join -->
-      <section class="container my-5">
-        <h1>Meet Our Successfull Studdents</h1>
+      <section class="container my-5" id="success">
+        <h1 class="fw-bolder">Meet Our Successful Students</h1>
         <p>Below you'll find our students who are working on the lead tech companies</p>
       </section>
       <!-- Meet Successfull Students -->
@@ -482,7 +482,7 @@
        <!-- Title header Section -->
        <section class="container my-5">
         <div class="text-center">
-          <h1>Some Students Feedback</h1>
+          <h1 class="fw-bolder">Some Students Feedback</h1>
           <p>
             Below you'll get some fantastic reviews from our students. They also told about our future planing.
           </p>
@@ -491,7 +491,7 @@
       <!-- Title header Section -->
       <!-- Some Students Feedback -->
       <section class="container">
-        <div class="row">
+        <div class="row g-3">
           <div class="col-lg-6 col-md-12 col-12" style="position:relative;">
             <div class="card p-4">
               <div class="card-body">
@@ -548,9 +548,9 @@
       </section>
       <!-- Some Students Feedback -->
       <!-- Title header Section -->
-      <section class="container my-5">
+      <section class="container my-5" id="faq">
         <div class="text-center">
-          <h1>Frequently Asked Questions</h1>
+          <h1 class="fw-bolder">Frequently Asked Questions</h1>
           <p>
             Below you'll get some of the frequently asked questions, also the answers are included with the corresponding questions.
           </p>
@@ -615,7 +615,7 @@
       <!-- FAQ Accordion  -->
       <!-- Trusted Companies Section -->
       <section class="container d-none d-md-none d-lg-block my-5">
-        <h1 class="text-center">
+        <h1 class="text-center fw-bolder">
           Trusted by over 800+ companies
         </h1>
         <div class="text-center mt-5">
@@ -633,6 +633,7 @@
     <!-- Footer Section -->
     <footer class="container-fluid p-5 mt-5 bg-dark">
       <section class="text-light p-5 text-center">
+        <i class="fa-solid fa-graduation-cap fs-2"></i>
         <h1>EdTech</h1>
         <p>
           <small>
