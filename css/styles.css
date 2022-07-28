@@ -41,8 +41,8 @@ body {
   color: #fcbf25;
 }
 
-/* @media only screen and (max-width: 576px) {
-  .btn-lg {
-    padding: 11px 18px;
+@media only screen and (max-width: 576px) {
+  .fsc {
+    font-size: 20px;
   }
-} */
+}
