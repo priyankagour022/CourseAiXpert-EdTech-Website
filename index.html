@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>EdTech || Website</title>
+    <title>CodeaiXpert || Website</title>
     <!-- * Bootstrap css CDN -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
@@ -12,12 +12,14 @@
       crossorigin="anonymous"
     />
     <!-- Font-Awesome -->
-    <script
-      src="https://kit.fontawesome.com/f43c8ff667.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/f43c8ff667.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!-- ** Custom Css  -->
     <link rel="stylesheet" href="./css/styles.css" />
+    
+
   </head>
   <body>
     <header>
@@ -26,7 +28,7 @@
         <nav class="navbar navbar-expand-lg">
           <div class="container-fluid">
             <a class="navbar-brand fw-semibold fs-2" href="#home"
-              ><i class="fa-solid fa-graduation-cap"></i> EdTech</a
+              ><i class="fa-solid fa-graduation-cap"></i> CodeaiXpert</a
             >
             <button
               class="navbar-toggler"
@@ -48,9 +50,6 @@
                   <a class="nav-link" href="#courses">Courses</a>
                 </li>
                 <li class="nav-item m-3">
-                  <a class="nav-link" href="#explore">Explore</a>
-                </li>
-                <li class="nav-item m-3">
                   <a class="nav-link" href="#success">Success</a>
                 </li>
                 <li class="nav-item m-3">
@@ -59,12 +58,19 @@
                 <li class="nav-item m-3">
                   <a class="nav-link" href="#register">Register</a>
                 </li>
+                
               </ul>
               <form class="d-flex" role="search">
-                <button type="button" class="btn btn-outline-primary btn-color">
-                  <a class="text-decoration-none" href="#register">Register</a>
+                <button type="button" class="btn btn-outline-primary">
+                    <a class="text-decoration-none" href="#register">Register</a>
                 </button>
-              </form>
+            </form>
+            <div style="margin: 10px;"></div> <!-- Inline styling for spacing -->
+            <form class="d-flex" role="search">
+                <button type="button" class="btn btn-outline-primary">
+                    <a class="text-decoration-none" href="login.html">Login</a>
+                </button>
+            </form>
             </div>
           </div>
         </nav>
@@ -86,9 +92,9 @@
                 alt="..."
               />
               <div class="carousel-caption">
-                <h1 class="fw-bolder fsc">Get Started Digital Learning</h1>
+                <h1 class="fw-bolder fsc">Begin Your Digital Learning Journey with Our Expert Assistance</h1>
                 <p>
-                  Face the digital challenges. We're here to assists you.
+                  Conquer Digital Challenges with Our Dedicated Support.
                 </p>
                 <button type="button" class="btn btn-primary bg-color px-lg-4 py-lg-2 fs-5">
                   Get Started
@@ -157,7 +163,7 @@
       <!-- Title header Section -->
       <section class="container my-5">
         <div class="text-center" id="courses">
-          <h1 class="fw-bolder">Discover Our Popular Courses</h1>
+          <h1 class="fw-bolder">AI-ML Courses with Job Assurance</h1>
           <p>
             It is a long established fact that a reader will be distracted by
             the readable content of a page when looking at its layout.
@@ -166,156 +172,140 @@
       </section>
       <!-- Title header Section -->
       <!-- Card of Courses -->
-      <section class="container">
-        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2 g-3">
-            <div class="col">
-                <div class="card mb-3">
-                    <div class="row g-0">
-                      <div class="col-md-4 col-12">
-                        <img
-                          src="./images/course/course-1.png"
-                          class="img-fluid rounded-0 h-100 card-img-top"
-                          alt="..."
-                        />
-                      </div>
-                      <div class="col-md-8">
-                        <div class="card-body my-4">
-                          <h5 class="card-title">Fundamental Of UI/UX Design</h5>
-                          <p class="card-text">
-                            UX/UI is the user experience & user-interface.You'll learn
-                            most of things this course.
-                          </p>
-                          <p class="card-text">
-                            <p class="fw-semibold fs-5 price-color">Price : 20$</p>
-                          </p>
+      <section class="container my-5">
+        <div id="courseCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2 g-3">
+                        <div class="col">
+                            <div class="card mb-3">
+                                <div class="row g-0">
+                                    <div class="col-md-4 col-12">
+                                        <img src="./images/course/course-1.png" class="img-fluid rounded-0 h-100 card-img-top" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body my-4">
+                                            <h5 class="card-title">Fundamental Of UI/UX Design</h5>
+                                            <p class="card-text">UX/UI is the user experience & user-interface. You'll learn most of things this course.</p>
+                                            <p class="card-text">
+                                                <p class="fw-semibold fs-5 price-color">Price : 20$</p>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                      </div>
-                    </div>
-                  </div>
-            </div>
-            <div class="col">
-                <div class="card mb-3" >
-                    <div class="row g-0">
-                      <div class="col-md-4 col-12">
-                        <img
-                          src="./images/course/course-2.png"
-                          class="img-fluid rounded-start h-100 card-img-top"
-                          alt="..."
-                        />
-                      </div>
-                      <div class="col-md-8">
-                        <div class="card-body my-4">
-                          <h5 class="card-title">Javascript Basic to advanced</h5>
-                          <p class="card-text">
-                            Introduction of JS basic,libraries and frameworks.ES6,React jS and node JS
-                          </p>
-                          <p class="card-text">
-                            <p class="price-color fw-semibold fs-5">Price : 40$</p>
-                          </p>
+                        <div class="col">
+                            <div class="card mb-3">
+                                <div class="row g-0">
+                                    <div class="col-md-4 col-12">
+                                        <img src="./images/course/course-2.png" class="img-fluid rounded-start h-100 card-img-top" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body my-4">
+                                            <h5 class="card-title">Javascript Basic to advanced</h5>
+                                            <p class="card-text">Introduction of JS basic, libraries and frameworks. ES6, React jS and node JS</p>
+                                            <p class="card-text">
+                                                <p class="price-color fw-semibold fs-5">Price : 40$</p>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                      </div>
                     </div>
-                  </div>
-            </div>
-            <div class="col">
-                <div class="card mb-3" >
-                    <div class="row g-0">
-                      <div class="col-md-4 col-12">
-                        <img
-                          src="./images/course/course-3.png"
-                          class="img-fluid rounded-start h-100  card-img-top"
-                          alt="..."
-                        />
-                      </div>
-                      <div class="col-md-8">
-                        <div class="card-body my-4">
-                          <h5 class="card-title">Fullstack Web Development</h5>
-                          <p class="card-text">
-                            Web fundamentals,data structures and programming.
-                          </p>
-                          <p class="card-text">
-                            <p class="price-color fw-semibold fs-5">Price : 50$</p>
-                          </p>
+                </div>
+                <div class="carousel-item">
+                    <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2 g-3">
+                        <div class="col">
+                            <div class="card mb-3">
+                                <div class="row g-0">
+                                    <div class="col-md-4 col-12">
+                                        <img src="./images/course/course-3.png" class="img-fluid rounded-start h-100 card-img-top" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body my-4">
+                                            <h5 class="card-title">Fullstack Web Development</h5>
+                                            <p class="card-text">Web fundamentals, data structures and programming.</p>
+                                            <p class="card-text">
+                                                <p class="price-color fw-semibold fs-5">Price : 50$</p>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                      </div>
-                    </div>
-                  </div>
-            </div>
-            <div class="col">
-                <div class="card mb-3" >
-                    <div class="row g-0">
-                      <div class="col-md-4 col-12">
-                        <img
-                          src="./images/course/course-4.png"
-                          class="img-fluid rounded-start h-100 card-img-top"
-                          alt="..."
-                        />
-                      </div>
-                      <div class="col-md-8">
-                        <div class="card-body my-4">
-                          <h5 class="card-title">Digital Marketing</h5>
-                          <p class="card-text">
-                            SEO,content creation and digital marketing. 
-                            Additional care if needed.
-                          </p>
-                          <p class="card-text">
-                            <p class="price-color fw-semibold fs-5">Price : 30$</p>
-                          </p>
+                        <div class="col">
+                            <div class="card mb-3">
+                                <div class="row g-0">
+                                    <div class="col-md-4 col-12">
+                                        <img src="./images/course/course-4.png" class="img-fluid rounded-start h-100 card-img-top" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body my-4">
+                                            <h5 class="card-title">Digital Marketing</h5>
+                                            <p class="card-text">SEO, content creation and digital marketing. Additional care if needed.</p>
+                                            <p class="card-text">
+                                                <p class="price-color fw-semibold fs-5">Price : 30$</p>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                      </div>
                     </div>
-                  </div>
-            </div>
-            <div class="col">
-                <div class="card mb-3" >
-                    <div class="row g-0">
-                      <div class="col-md-4 col-12">
-                        <img
-                          src="./images/course/course-5.png"
-                          class="img-fluid rounded-start h-100 card-img-top"
-                          alt="..."
-                        />
-                      </div>
-                      <div class="col-md-8">
-                        <div class="card-body my-4">
-                          <h5 class="card-title">Photography Basic Rules</h5>
-                          <p class="card-text">
-                            Basic photography trainning with additional support for weddings and events.
-                          </p>
-                          <p class="card-text">
-                            <p class="price-color fw-semibold fs-5">Price : 15$</p>
-                          </p>
+                </div>
+                <div class="carousel-item">
+                    <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2 g-3">
+                        <div class="col">
+                            <div class="card mb-3">
+                                <div class="row g-0">
+                                    <div class="col-md-4 col-12">
+                                        <img src="./images/course/course-5.png" class="img-fluid rounded-start h-100 card-img-top" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body my-4">
+                                            <h5 class="card-title">Photography Basic Rules</h5>
+                                            <p class="card-text">Basic photography training with additional support for weddings and events.</p>
+                                            <p class="card-text">
+                                                <p class="price-color fw-semibold fs-5">Price : 15$</p>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                      </div>
-                    </div>
-                  </div>
-            </div>
-            <div class="col">
-                <div class="card mb-3" >
-                    <div class="row g-0">
-                      <div class="col-md-4 col-12">
-                        <img
-                          src="./images/course/course-6.png"
-                          class="img-fluid rounded-start h-100 card-img-top"
-                          alt="..."
-                        />
-                      </div>
-                      <div class="col-md-8">
-                        <div class="card-body my-4">
-                          <h5 class="card-title">Motion Graphics</h5>
-                          <p class="card-text">
-                            Motion Graphics and transitions. Support for new technologies if needed.
-                          </p>
-                          <p class="card-text">
-                            <p class="price-color fw-semibold fs-5">Price : 60$</p>
-                          </p>
+                        <div class="col">
+                            <div class="card mb-3">
+                                <div class="row g-0">
+                                    <div class="col-md-4 col-12">
+                                        <img src="./images/course/course-6.png" class="img-fluid rounded-start h-100 card-img-top" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body my-4">
+                                            <h5 class="card-title">Motion Graphics</h5>
+                                            <p class="card-text">Motion Graphics and transitions. Support for new technologies if needed.</p>
+                                            <p class="card-text">
+                                                <p class="price-color fw-semibold fs-5">Price : 60$</p>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                      </div>
                     </div>
-                  </div>
+                </div>
             </div>
+            <a class="carousel-control-prev" href="#courseCarousel" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#courseCarousel" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </a>
         </div>
-      </section>
+    </section>
       <!-- Card of Courses -->
       <!-- View all button -->
       <section class="container my-5">
@@ -324,42 +314,7 @@
         </div>
       </section>
       <!-- View all button -->
-      <!-- *Extra: Explore Institute -->
-      <section class="container" id="explore">
-        <div class="card mb-3">
-          <div class="row g-0">
-            <div class="col-lg-5 col-md-5 col-12">
-              <img src="./images/working.png" class="h-100 img-fluid img-lg-fluid img-md-fluid rounded-start card-img-top " alt="...">
-            </div>
-            <div class="col-lg-7 col-md-7 col-12 explore-background">
-              <div class="card-body grid-aligning">
-                <h1 class="card-title fw-bolder">Explore Our Institute</h1>
-                <p class="card-text">We offer variety of courses with good pricing and great support, Join us and fulfil your dream</p>
-                <p class="card-text">You can use our free trail and explore later. In few courses we offer <strong> Money Back </strong>guarantee.</p>
-                <div class="d-flex gap-3 my-1">
-                  <div>
-                    <h2>32.5K+</h2>
-                    <small>Online Course</small>
-                  </div>
-                  <div>
-                    <h2>600K+</h2>
-                    <small>Experts</small>
-                  </div>
-                  <div>
-                    <h2>1K+</h2>
-                    <small>Ratings & Reviews</small>
-                  </div>
-                </div>
-                <button type="button" class="btn bg-color text-white btn-lg">
-                  Read More
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- *Extra: Explore Institute -->
-      <!-- Ready to join -->
+            <!-- Ready to join -->
       <section class="container p-5 bg-color text-white rounded-2 my-5" id="register">
         <div class="row">
             <div class="col-lg-8 col-md-12 col-12 text-lg-start text-md-center text-center ps-5 my-auto">
@@ -382,30 +337,47 @@
                   <div class="modal-dialog">
                     <div class="modal-content">
                       <div class="modal-header">
-                        <h5 class="modal-title">Registration Here:</h5>
+                        <h5 class="modal-title">Registration</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                       </div>
                       <div class="modal-body">
-                        <form>
-                          <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        <form class="row g-3">
+                          <div class="col-md-6">
+                            <!-- <label for="firstName" class="form-label">First Name: </label> -->
+                            <input type="text" class="form-control" name="first_name" id="firstName" placeholder="Enter first name " required>
                           </div>
-                          <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1">
+                          <div class="col-md-6">
+                            <!-- <label for="lastName" class="form-label">Last Name: </label> -->
+                            <input type="text" class="form-control" name="last_name" id="lastName" placeholder="Enter last name " required>
                           </div>
-                          <div class="mb-3 form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                          <div class="col-12">
+                            <!-- <label for="emailAddress" class="form-label">Email Address: </label> -->
+                            <input type="email" class="form-control" id="emailAddress" placeholder="Enter email address " required>
                           </div>
-                          <button type="submit" class="btn btn-primary">Register</button>
+                          <div class="col-12">
+                            <!-- <label for="password" class="form-label">Password: </label> -->
+                            <input type="password" class="form-control" id="password" placeholder="Enter password " required>
+                          </div>
+                          <div class="col-12">
+                            <!-- <label for="address" class="form-label">Address: </label> -->
+                            <textarea class="form-control" placeholder="Enter your address " rows="3" id="address" name="address" required></textarea>
+                          </div>
+                          <div class="col-12">
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" id="termsConditionCheck">
+                              <label class="form-check-label" for="termsConditionCheck">
+                                I Accept <a href="terms_conditions.html">Terms and Condition</a>
+                              </label>
+                            </div>
+                          </div>
+                          <div class="col-12">
+                            <button type="submit" class="form-control btn btn-primary">Register</button>
+                          </div>
                         </form>
                       </div>
                       <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
+                        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
                       </div>
                     </div>
                   </div>
@@ -479,7 +451,7 @@
        <!-- Title header Section -->
        <section class="container my-5">
         <div class="text-center">
-          <h1 class="fw-bolder">Some Students Feedback</h1>
+          <h1 class="fw-bolder">Testimonials</h1>
           <p>
             Below you'll get some fantastic reviews from our students. They also told about our future planing.
           </p>
@@ -613,7 +585,7 @@
       <!-- Trusted Companies Section -->
       <section class="container d-none d-md-none d-lg-block my-5">
         <h1 class="text-center fw-bolder">
-          Trusted by over 800+ companies
+          Our client companies
         </h1>
         <div class="text-center mt-5 d-flex justify-content-between">
           <img  src="./images/company/company-1.png" alt="">
@@ -631,7 +603,7 @@
     <footer class="container-fluid p-5 mt-5 bg-dark">
       <section class="text-light p-5 text-center">
         <i class="fa-solid fa-graduation-cap fs-2"></i>
-        <h1>EdTech</h1>
+        <h1>CodeaiXpert</h1>
         <p>
           <small>
             Office 41, Zawaya Buildin, Ghala Muscat, 
@@ -657,5 +629,31 @@
       integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
       crossorigin="anonymous"
     ></script>
+    <!-- //login -->
+    <script>
+      function loginWithGoogle() {
+          // Replace with your Google Client ID
+          const clientId = 'YOUR_GOOGLE_CLIENT_ID.apps.googleusercontent.com';
+          const redirectUri = 'YOUR_REDIRECT_URI'; // Specify your redirect URI
+
+          // Construct the OAuth 2.0 URL
+          const authUrl = `https://accounts.google.com/o/oauth2/auth?response_type=code&client_id=${clientId}&redirect_uri=${redirectUri}&scope=email profile openid`;
+
+          // Redirect the user to Google's authentication page
+          window.location.href = authUrl;
+      }
+
+      function loginWithLinkedIn() {
+          // Replace with your LinkedIn Client ID
+          const clientId = 'YOUR_LINKEDIN_CLIENT_ID';
+          const redirectUri = 'YOUR_REDIRECT_URI'; // Specify your redirect URI
+
+          // Construct the OAuth 2.0 URL
+          const authUrl = `https://www.linkedin.com/oauth/v2/authorization?response_type=code&client_id=${clientId}&redirect_uri=${redirectUri}&scope=r_liteprofile r_emailaddress`;
+
+          // Redirect the user to LinkedIn's authentication page
+          window.location.href = authUrl;
+      }
+  </script>
   </body>
 </html>
